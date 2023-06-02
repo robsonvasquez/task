@@ -1,9 +1,9 @@
-import Home from "../../pages/home";
+import {Outlet} from "react-router-dom"
 
 export default function Main (){
     return(
-        <>
-            <Home/>
-        </>
+        <main>
+            <Outlet/>
+        </main>
     )
 }
