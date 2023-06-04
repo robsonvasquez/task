@@ -1,3 +1,4 @@
+import Style from './style.module.css'
 import { IconBaseProps } from "react-icons";
 
 interface buttonProps{
@@ -11,7 +12,7 @@ interface buttonProps{
 
 export default function Button ({type, text, name, icon, color, padding}: buttonProps){
     return(
-        <button type={type} name={name} style={{padding: padding, color: color}}>
+        <button type={type} name={name} className={Style.button} style={{padding: padding, color: color}}>
             {text}
             <>
                 {icon}

@@ -2,27 +2,51 @@ import Style from './style.module.css'
 import Img from '../../assets/logo.png'
 import Input from '../input/input'
 
-import {BsSearch, BsFillBagHeartFill} from 'react-icons/bs';
+import {BsSearch, BsFillBagFill} from 'react-icons/bs';
+import {GiHamburgerMenu} from 'react-icons/gi';
 import Button from '../button/button';
+import Navbar from '../nav/nav';
+import { useState } from 'react';
 
 export default function Header (){
+
+    const width = window.innerWidth;
+
+    const[active, setActive] = useState(false);
+
+    function toggle_menu(){
+        setActive(!active);
+    }
+
     return(
-        <header className={Style.header}>
+            <>
+                <header className={Style.header}>
 
-            <div className={Style.logo}>
-                <img src={Img} alt="Logo" />
-                <span>Trendy Steps</span>
-            </div>
+                    <button className={Style.hamburger} title='Menu' onClick={toggle_menu}> 
+                        <GiHamburgerMenu size='30'/>
+                    </button>
 
-            <div className={Style.input}>
-                <span className={Style.search}> <BsSearch size='15'/> </span>
-                <Input type='text' placeholder='Search' width='25rem' height='2.5rem' padding='4px 10px 4px 30px'/>
-            </div>
+                    <div className={active ? Style.mobile_open : Style.mobile_nav}> <Navbar/> </div>
 
-            <div className={Style.button}>
-                <Button name='Entrar' text='Entrar' color='#CCCCCC' padding='2px 15px'/>
-                <span> <BsFillBagHeartFill size='30' color='#CCCCCC'/> </span>
-            </div>
-        </header>
+                    <div className={Style.logo}>
+                        <img src={Img} alt="Logo" />
+                        <span>Trendy Steps</span>
+                    </div>
+
+                    <div className={Style.input}>
+                        {width < 750 ? <Input type='text' placeholder='Search' width={width-30+"px"} height='2.5rem' padding='4px 10px 4px 10px'/> : <Input type='text' placeholder='Search' width='28rem' height='2.5rem' padding='4px 10px 4px 10px'/>}
+                        <span className={Style.search}> <BsSearch size='15'/> </span>
+                    </div>
+
+                    <div className={Style.button}>
+                        <div className={Style.mobile}>
+                            <Button name='Entrar' text='Entrar' color='#333333' padding='2px 15px'/>
+                        </div>
+                        <span className={Style.bag} title='Sacola'> <BsFillBagFill size='30' color='#00CC66'/> </span>
+                    </div>
+                </header>
+
+                <div className={Style.mobile}> <Navbar/> </div>
+            </>
     )
 }

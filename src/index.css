@@ -3,6 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,6 +12,6 @@
 body {
   min-height: 100vh;
   background-color: #FFFFFF;
-  color: #CCCCCC;
+  color: #333333;
 }
 
