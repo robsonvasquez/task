@@ -4,8 +4,9 @@ import App from './App.tsx'
 import './index.css'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './pages/home.tsx'
+import Home from './pages/home/home.tsx'
 import Car from './pages/car.tsx'
+import Category from './pages/category.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <Home/>,
+      },
+
+      {
+        path:"category",
+        element: <Category/>,
       },
 
       {

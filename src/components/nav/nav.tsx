@@ -1,3 +1,4 @@
+import Button from '../button/button'
 import Style from './style.module.css'
 
 export default function Navbar (){
@@ -80,6 +81,7 @@ export default function Navbar (){
                         </ul>
                     </div>
                 </li>
+
                 <li className={Style.infantil}>
                     <a href='#'>
                         <h4>INFANTIL</h4>
@@ -118,6 +120,7 @@ export default function Navbar (){
                         </ul>
                     </div>
                 </li>
+
                 <li className={Style.marcas}>
                     <a href='#'>
                         <h4>MARCAS</h4>
@@ -143,13 +146,14 @@ export default function Navbar (){
                             </ul>
                     </div>
                 </li>
+
                 <li className={Style.outlet}>
                     <a href='#'>
                         <h4>OUTLET</h4>
                     </a>
 
                     <div className={Style.links_outlet}>
-                    <ul>
+                        <ul>
                             <li><h4>ROUPAS</h4></li>
                             <li><a>Blusas</a></li>
                             <li><a>Calças</a></li>
@@ -180,6 +184,10 @@ export default function Navbar (){
                             <li><a>Shorts</a></li>
                         </ul>
                     </div>
+                </li>
+
+                <li className={Style.mobile}>
+                    <Button name='Entrar' text='Entrar' color='#333333' padding='2px 15px'/>
                 </li>
             </ul>
         </nav>

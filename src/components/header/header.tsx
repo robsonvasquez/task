@@ -26,11 +26,13 @@ export default function Header (){
                         <GiHamburgerMenu size='30'/>
                     </button>
 
-                    <div className={active ? Style.mobile_open : Style.mobile_nav}> <Navbar/> </div>
+                    <div className={active ? Style.mobile_open : Style.mobile_nav}> 
+                        <Navbar/> 
+                    </div>
 
                     <div className={Style.logo}>
                         <img src={Img} alt="Logo" />
-                        <span>Trendy Steps</span>
+                        <h3>Trendy Steps</h3>
                     </div>
 
                     <div className={Style.input}>
@@ -42,7 +44,7 @@ export default function Header (){
                         <div className={Style.mobile}>
                             <Button name='Entrar' text='Entrar' color='#333333' padding='2px 15px'/>
                         </div>
-                        <span className={Style.bag} title='Sacola'> <BsFillBagFill size='30' color='#00CC66'/> </span>
+                        <span className={Style.bag} title='Sacola'> <BsFillBagFill/> </span>
                     </div>
                 </header>
 
