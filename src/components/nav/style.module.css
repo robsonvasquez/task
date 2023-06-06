@@ -16,7 +16,6 @@ a{
     gap: 2rem;
     background-color: #003366;
     border-top: solid 1px #CCCCCC;
-    border-bottom: solid 1px #CCCCCC;
     height: 2rem;
 }
 
@@ -39,7 +38,7 @@ a{
     background-color: #003366;
     color: #FF6600;
     width: 100%;
-    top:112px;
+    top: 26px;
     left: 0;
     display: flex;
     flex-direction: row;
@@ -75,7 +74,7 @@ a{
     .infantil:hover  .links_infantil, .marcas:hover  .links_marcas, .marcas:hover  .links_marcas,
     .outlet:hover .links_outlet{
         max-height: 320px;
-        width: 110px;
+        width: auto;
         top: 0px;
         left: 100px;
         flex-wrap: wrap;

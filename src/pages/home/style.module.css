@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .promo h1{
@@ -14,25 +14,91 @@
 
 .promo_card{
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 5px;
 }
 
 .card{
+    width: calc((98%)/3);
     position: relative;
     overflow: hidden;
 }
 
 .promo_card img{
-    width: calc(98vw/3);
+    width: 100%;
     transition: 0.3s all ease-in-out;
-    
 }
 
 .promo_card img:hover{
     transform: scale(1.1);
 }
 
+.marcas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.marcas h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.marcas_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+.marcas_card div{
+    width: calc((100%)/5);
+    position: relative;
+    overflow: hidden;
+}
+
+.marcas_card div img{
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+    
+}
+
+.marcas_card div img:hover{
+    transform: scale(1.2);
+    
+}
+
 @media (max-width: 750px) {
 
+    .promo h1{
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
+    .promo_card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promo_card img{
+        width: 80vw;        
+    }
+
+    .marcas h3{
+        font-size: 1rem;
+    }
+
+    .marcas_card div{
+        width: 40%;
+    }
 }

@@ -10,7 +10,7 @@ export default function Navbar (){
                         <h4>FEMININO</h4>
                     </a>
                     <div className={Style.links_feminino}>
-                    <ul>
+                        <ul>
                             <li><h4>ROUPAS</h4></li>
                             <li><a>Blusas</a></li>
                             <li><a>Calças</a></li>

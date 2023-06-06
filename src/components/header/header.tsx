@@ -7,6 +7,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import Button from '../button/button';
 import Navbar from '../nav/nav';
 import { useState } from 'react';
+import Car from '../car/car';
 
 export default function Header (){
 
@@ -23,7 +24,7 @@ export default function Header (){
                 <header className={Style.header}>
 
                     <button className={Style.hamburger} title='Menu' onClick={toggle_menu}> 
-                        <GiHamburgerMenu size='30'/>
+                        <GiHamburgerMenu size='30' color='#FFF'/>
                     </button>
 
                     <div className={active ? Style.mobile_open : Style.mobile_nav}> 
@@ -41,11 +42,20 @@ export default function Header (){
                     </div>
 
                     <div className={Style.button}>
+
+                        <div className={Style.bag_car}>
+                            <span className={Style.bag} title='Sacola'> <BsFillBagFill/> </span>
+                            <div className={Style.car}>
+                                <Car/>
+                            </div>
+                        </div>
+                        
                         <div className={Style.mobile}>
                             <Button name='Entrar' text='Entrar' color='#333333' padding='2px 15px'/>
                         </div>
-                        <span className={Style.bag} title='Sacola'> <BsFillBagFill/> </span>
                     </div>
+
+                    
                 </header>
 
                 <div className={Style.mobile}> <Navbar/> </div>

@@ -1,0 +1,78 @@
+.car{
+    width: auto;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    gap: 10px;
+    color: aliceblue;
+    background-color: #003366;
+    border: solid 2px  #FF6600;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.title{
+    border-bottom: solid 1px  #FF6600;
+    padding: 5px;
+}
+
+.title h4{
+    font-weight: bold;
+}
+
+.itens{
+    width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.item{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    border: solid 1px #cccccc17;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item:hover{
+    background-color: #054280;
+}
+
+.item_qnt{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 5px;
+}
+
+.item_qnt span{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.item_qnt span:hover:nth-child(odd){
+    color: #FF6600;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px  #FF6600;
+    padding: 5px;
+}
+
+.price span{
+    font-weight: bold;
+}

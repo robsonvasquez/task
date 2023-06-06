@@ -6,14 +6,16 @@
     justify-content: space-around;
     align-items: center;
     padding: 5px;
+    position:sticky;
+    top: 0;
+    z-index: 6;
 }
 
 .logo{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2px;
+    gap: 10px;
     color: #FF6600;
 }
 
@@ -56,24 +58,39 @@
     align-items: center;
     gap: 1rem;
     cursor: pointer;
+    position: relative;
+}
+
+.bag_car:hover .car{
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    z-index: 5;
+}
+
+.car{
+    display: none;
 }
 
 .bag{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 25px;
     color: #00CC66;
-}
-
-.bag:hover{
-    transform: scale(1.1);
+    font-size: 1.5rem;
 }
 
 .hamburger{
     display: none;
     background-color: transparent;
     border: none;
+}
+
+.mobile{
+    position:sticky;
+    top: 58px;
+    z-index: 4;
 }
 
 .mobile_nav{
@@ -85,7 +102,10 @@
     .header{
         padding: 5px;
         gap: 10px;
-        position: relative;
+        position:sticky;
+        top: 0px;
+        z-index: 10;
+        border-radius: 0 0 5px 5px;
     }
 
     .hamburger{
@@ -112,6 +132,10 @@
 
     .logo img{
         display: none;
+    }
+
+    .bag_car:hover .car{
+        right: 0;
     }
 
     .bag{
