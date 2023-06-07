@@ -8,6 +8,7 @@ import Button from '../button/button';
 import Navbar from '../nav/nav';
 import { useState } from 'react';
 import Car from '../car/car';
+import { Link } from 'react-router-dom';
 
 export default function Header (){
 
@@ -27,13 +28,11 @@ export default function Header (){
                         <GiHamburgerMenu size='30' color='#FFF'/>
                     </button>
 
-                    <div className={active ? Style.mobile_open : Style.mobile_nav}> 
-                        <Navbar/> 
-                    </div>
-
                     <div className={Style.logo}>
-                        <img src={Img} alt="Logo" />
-                        <h3>Trendy Steps</h3>
+                        <Link to="/">
+                            <img src={Img} alt="Logo" />
+                            <h3>Trendy Steps</h3>
+                        </Link>
                     </div>
 
                     <div className={Style.input}>
@@ -42,7 +41,6 @@ export default function Header (){
                     </div>
 
                     <div className={Style.button}>
-
                         <div className={Style.bag_car}>
                             <span className={Style.bag} title='Sacola'> <BsFillBagFill/> </span>
                             <div className={Style.car}>
@@ -55,10 +53,12 @@ export default function Header (){
                         </div>
                     </div>
 
+                    <div className={active ? Style.mobile_open : Style.mobile}> 
+                        <Navbar/> 
+                    </div>
                     
                 </header>
 
-                <div className={Style.mobile}> <Navbar/> </div>
             </>
     )
 }

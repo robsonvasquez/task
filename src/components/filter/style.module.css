@@ -1,0 +1,47 @@
+.filter{
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.filter:nth-child(even){
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+}
+
+.filter summary {
+    list-style: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+summary:after {
+    content: "+"; 
+    color: #000000; 
+    float: left;  
+    font-weight: bold; 
+    padding: 0; 
+    text-align: center; 
+    width: 20px;
+    left: 20px;
+    margin-right: 10px;
+}
+
+details[open] summary:after {
+    content: "-";
+}
+
+.filter details ul{
+    padding: 5px;
+    text-align: center;
+}
+
+.filter details ul li{
+    font-size: small;
+}
+
+.filter details ul li:hover{
+    color: #FF6600;;
+}

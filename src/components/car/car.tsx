@@ -1,5 +1,4 @@
 import Style from './style.module.css'
-import img from '../../assets/react.svg'
 import blusa from '../../assets/blusa.jpeg'
 
 import {AiOutlineMinusCircle, AiOutlinePlusCircle} from 'react-icons/ai'
@@ -23,7 +22,7 @@ export default function Car (){
                 </div>
 
                 <div className={Style.item}>
-                    <img src={img} alt="" />
+                    <img src={blusa} alt="" />
 
                     <div className={Style.item_qnt}>
                         <span><AiOutlineMinusCircle size='20'/></span>
@@ -33,7 +32,7 @@ export default function Car (){
                 </div>
 
                 <div className={Style.item}>
-                    <img src={img} alt="" />
+                    <img src={blusa} alt="" />
 
                     <div className={Style.item_qnt}>
                         <span><AiOutlineMinusCircle size='20'/></span>
@@ -43,7 +42,7 @@ export default function Car (){
                 </div>
 
                 <div className={Style.item}>
-                    <img src={img} alt="" />
+                    <img src={blusa} alt="" />
 
                     <div className={Style.item_qnt}>
                         <span><AiOutlineMinusCircle size='20'/></span>

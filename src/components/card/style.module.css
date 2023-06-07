@@ -1,0 +1,33 @@
+.card{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    width: 200px;
+    border: solid 1px #e9e9e9;
+}
+
+.card_img{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card_img img{
+    width: 200px;
+    height: 100%;
+}
+
+.card_img img:hover{
+    transform: scale(1.1);
+}
+
+.card_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+}
+
+.card_description h4{
+    font-size: 0.8rem;
+    font-weight: bold;
+}

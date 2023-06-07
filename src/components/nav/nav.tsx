@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../button/button'
 import Style from './style.module.css'
 
@@ -6,9 +7,9 @@ export default function Navbar (){
         <nav>
             <ul className={Style.links}>
                 <li className={Style.feminino}>
-                    <a href='#'>
+                    <Link to="Category">
                         <h4>FEMININO</h4>
-                    </a>
+                    </Link>
                     <div className={Style.links_feminino}>
                         <ul>
                             <li><h4>ROUPAS</h4></li>

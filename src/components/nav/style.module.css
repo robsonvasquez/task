@@ -17,33 +17,33 @@ a{
     background-color: #003366;
     border-top: solid 1px #CCCCCC;
     height: 2rem;
+    position: relative;
 }
 
 .links a:hover{
-    position: relative;
     color: #FF6600;
 }
 
 .links_feminino, .links_masculino, 
 .links_infantil, .links_marcas, .links_marcas, .links_outlet{
-    display: none;   
+    display: none;
 }
 
 .feminino:hover  .links_feminino, .masculino:hover  .links_masculino, 
 .infantil:hover  .links_infantil, .marcas:hover  .links_marcas, .marcas:hover  .links_marcas,
 .outlet:hover .links_outlet{
     position: absolute;
+    width: 100%;
     height: auto;
     padding: 5px;
     background-color: #003366;
     color: #FF6600;
-    width: 100%;
-    top: 26px;
+    top: 28px;
     left: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: star;
+    align-items: start;
     gap: 50px;
     z-index: 10;
 }
